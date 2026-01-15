@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>wheeltec_wifi_client</name>
+  <version>1.0.0</version>
+  <description>WiFi客户端功能包，用于向其他小车发送命令，支持串口接收指令</description>
+
+  <maintainer email="wheeltec@example.com">wheeltec</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>serial</build_depend>
+
+  <build_export_depend>rospy</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+  <build_export_depend>geometry_msgs</build_export_depend>
+  <build_export_depend>serial</build_export_depend>
+
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>serial</exec_depend>
+
+  <export>
+  </export>
+</package>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- 直接启动3D导航系统 -->
+
+    <!-- Wheeltec串口控制节点 -->
+    <node name="wheeltec_control_node" pkg="wheeltec_serial_control" type="wheeltec_control_node.py" output="screen">
+        <!-- 加载YAML配置文件 -->
+        <rosparam command="load" file="$(find wheeltec_serial_control)/config/control_config.yaml" />
+    </node>
+</launch>

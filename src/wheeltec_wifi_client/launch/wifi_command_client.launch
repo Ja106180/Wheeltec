@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- WiFi命令客户端节点 -->
+    <node name="wifi_command_client" pkg="wheeltec_wifi_client" type="wifi_command_client.py" output="screen" respawn="true">
+        <!-- WiFi目标小车配置 -->
+        <param name="target_host" value="192.168.31.27" />
+        <param name="target_port" value="8888" />
+        <param name="auto_reconnect" value="true" />
+        <param name="reconnect_interval" value="5.0" />
+        
+        <!-- 串口配置 -->
+        <param name="enable_serial" value="true" />
+        <param name="serial_port" value="/dev/ttyUSB0" />
+        <param name="serial_baudrate" value="115200" />
+        
+        <!-- 加载配置文件（可选） -->
+        <rosparam command="load" file="$(find wheeltec_wifi_client)/config/client_config.yaml" />
+    </node>
+</launch>

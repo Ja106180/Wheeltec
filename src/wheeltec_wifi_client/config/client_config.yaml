@@ -1,0 +1,27 @@
+# WiFi客户端配置文件
+
+# 目标小车网络配置
+target_host: "192.168.31.27"  # 目标小车的IP地址，需要根据实际情况修改
+target_port: 8888              # 目标小车的端口号
+
+# 连接配置
+auto_reconnect: true           # 是否自动重连
+reconnect_interval: 5.0        # 重连间隔（秒）
+
+# 串口配置
+enable_serial: true            # 是否启用串口接收
+serial_port: "/dev/ttyUSB0"    # 串口设备路径
+serial_baudrate: 115200        # 串口波特率
+
+# 串口指令到WiFi命令映射
+# FA116FB -> 前进
+# FA117FB -> 后退
+# FA118FB -> 停止
+# FA119FB -> 前往目标点一
+# FA120FB -> 前往目标点二
+# FA121FB -> 开启导航模式
+# FA122FB -> 获取方位
+# FA123FB -> 小车视觉跟随
+# FA124FB -> 小车雷达跟随
+# FA125FB -> 开启巡逻模式
+# FA126FB -> 开启表演模式

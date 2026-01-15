@@ -1,0 +1,26 @@
+command_strings:
+  forward: "FA111FB"
+  stop: "FA222FB"
+  backward: "FA333FB"
+  nav_start: "FA444FB"
+  nav_a: "FA555FB"
+  nav_b: "FA666FB"
+  feedback_a: "FA000FB"
+  feedback_b: "FA999FB"
+
+navigation_points:
+  point_a: 
+    x: 2.6
+    y: 0.1
+    z: 0.0
+    w: 0.9
+  point_b:
+    x: 1.1
+    y: 0.1
+    z: -0.9
+    w: 0.2
+
+serial_config:
+  port: "/dev/ttyUSB0"
+  baudrate: 115200
+  timeout: 1000

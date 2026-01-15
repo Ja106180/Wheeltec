@@ -1,0 +1,20 @@
+# 排除编译产物
+build/
+devel/
+install/
+log/
+
+# 排除超大文件（核心！）
+*.bag
+*.pb
+*.db
+*.pcd
+*.bin
+*.h5
+*.pt
+
+# 排除临时文件
+*.swp
+*.tmp
+.DS_Store
+*.log
